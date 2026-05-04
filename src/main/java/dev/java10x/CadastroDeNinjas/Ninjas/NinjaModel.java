@@ -4,7 +4,7 @@ import dev.java10x.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;2
+import lombok.NoArgsConstructor;
 
 
 @Entity
@@ -28,7 +28,7 @@ public class NinjaModel {
     @Column(name = "img_url")
     private String imgUrl;
 
-    @Column(name = "id")
+    @Column(name = "idada")
     private int idade;
 
     // O missoesModel so vai ter 1
