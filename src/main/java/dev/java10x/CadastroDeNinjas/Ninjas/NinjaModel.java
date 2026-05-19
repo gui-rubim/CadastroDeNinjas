@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NinjaModel {
+    // Aqui sao nossas grandes tabelas, nossos moldes.
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

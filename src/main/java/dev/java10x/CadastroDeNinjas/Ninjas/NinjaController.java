@@ -6,6 +6,7 @@ import java.util.List;
 @RestController
 @RequestMapping
 public class NinjaController {
+    //Controller é usada para receber as requisições (pedidos) do http.
 
     private NinjaService ninjaService;
 
@@ -32,6 +33,11 @@ public class NinjaController {
     @GetMapping("/listar")
     public List<NinjaModel> ninjaRepositorio(){
         return ninjaService.listarNinjas();
+    }
+
+    @GetMapping("/listar/{id}")
+    public NinjaModel listarNinjaPorID (@PathVariable Long id){
+        return ninjaService.listaNinjasPorId(id);
     }
 
 
